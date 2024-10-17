@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-title">Pokédex</div>
+        <div class="navbar-links">
+            <a href="addpokemon.html">Add Pokémon</a>
+            <a href="trade.html">Trade</a>
+            <a href="profile.html">Profile</a>
+            <a href="logout.php">Logout</a>
+        </div>
+    </nav>
+
+    <div class="search-sort">
+        <input type="text" id="search" placeholder="Search">
+        <button onclick="sortPokemons('asc')">Ascending</button>
+        <button onclick="sortPokemons('desc')">Descending</button>
+    </div>
+
+    <div class="pokedex-container" id="pokedex">
+        <!-- Example Pokémon Cards (replace with dynamically generated content) -->
+        <div class="pokemon-card" data-number="1">
+            <img src="images/bulbasaur.png" alt="Bulbasaur">
+            <p>#1 Bulbasaur</p>
+        </div>
+        <div class="pokemon-card" data-number="4">
+            <img src="images/charmander.png" alt="Charmander">
+            <p>#4 Charmander</p>
+        </div>
+        <!-- Repeat similar structure for other Pokémon -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
